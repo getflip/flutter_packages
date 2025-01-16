@@ -5,6 +5,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 import 'render_tree.dart';
 import 'tree_core.dart';
@@ -582,8 +583,7 @@ class TreeView<T> extends StatefulWidget {
                     turns: node.isExpanded ? 0.25 : 0.0,
                     duration: animationDuration,
                     curve: animationCurve,
-                    // Renders a unicode right-facing arrow. >
-                    child: const Icon(IconData(0x25BA), size: 14),
+                    child: const Icon(Icons.chevron_right, size: 14),
                   )
                 : null,
           ),
